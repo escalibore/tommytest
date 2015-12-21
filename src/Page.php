@@ -1,5 +1,5 @@
 <?php
-namespace Acme;
+namespace mysqlgrid;
 
 class Page {
     public function __construct()
