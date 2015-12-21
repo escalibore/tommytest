@@ -18,7 +18,7 @@ class Book {
 function lego() {
     echo 'You are now a master builder.';
 }
-/*
+
 class Mysqlgridmain
 {
     var $name;
@@ -287,4 +287,3 @@ class Mysqlgridmain
         <?php
     }
 }
-*/
