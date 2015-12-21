@@ -19,7 +19,7 @@ class mysqlgrid
         //var_dump($this->mySqlGridOptions);
         //echo "I'm here too<br>";
         $this->path = $this->mySqlGridOptions['includePath'];
-        echo "<br>path:" . $this->path . "<br>";
+        //echo "<br>path:" . $this->path . "<br>";
         // require $this->path . "mysqlgrid.php";
         //$myfun = 'good';
         //echo "$myfun";
