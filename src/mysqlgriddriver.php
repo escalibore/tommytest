@@ -1,5 +1,4 @@
 <?php
-
 namespace mysqlgrid;
 
 class mysqlgrid
@@ -21,7 +20,7 @@ class mysqlgrid
         //var_dump($this->mySqlGridOptions);
         //echo "I'm here too<br>";
         $this->path = $this->mySqlGridOptions['includePath'];
-        echo "<br>path:" . $this->path . "<br>";
+        //echo "<br>path:" . $this->path . "<br>";
         // require $this->path . "mysqlgrid.php";
         //$myfun = 'good';
         //echo "$myfun";
@@ -268,17 +267,5 @@ class mysqlgrid
 
 
         <?php
-
-
-    }
-
-    function set_name($new_name)
-    {
-        $this->name = $new_name;
-    }
-
-    function get_name()
-    {
-        return $this->name;
     }
 }
