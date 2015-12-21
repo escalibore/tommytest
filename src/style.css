@@ -1,0 +1,97 @@
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none; font-family: arial;} 
+a.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:30px; margin-left:-460px;
+    width:420px; line-height:16px;
+}
+a.tooltip:hover span{ 
+    display:inline; position:absolute; 
+    border:2px solid #FFF;  color:#EEE;
+    background:#337AB7 repeat-x 0 0;
+ /*   background:#337AB7 url(images/css-tooltip-gradient-bg.png) repeat-x 0 0;  */
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:2px;        
+    box-shadow: 0px 0px 8px 4px #666;
+    /*opacity: 0.8;*/
+}
+
+.mySqlGridSpinner {vertical-align:middle;}
+.mySqlGridWrapper {display:inline-block;}
+.mySqlGridTop {height:22px; text-align:left; font-size:0.85em;}
+.mySqlGridbuttonArea {display:inline-block; float:right;}
+.mySqlGridbuttonArea button {font-size:0.8em;}
+.mySqlGridHeader {cursor:pointer; /*white-space:nowrap;*/ }
+.mySqlGridSearchCol {white-space:nowrap;}
+.mySqlGridSearchInput {width:100%;}
+.mySqlGridSelectCol {width:6px; border-left:none; cursor:pointer;}
+.mySqlGridSubmit {position: absolute; left: -9999px}
+
+.mySqlGridSortIcon {display: inline-block; position: relative; height:12px; width:14px}
+.mySqlGridIconNorth {position:absolute; top:-5px;}
+.mySqlGridIconSouth {position: absolute; top: 1px;}
+.mySqlGridTable {
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+    font-family: arial;
+    font-size: 0.75em;
+}
+
+.mySqlGridDataCell {padding-top: 3px;}
+
+.mySqlGridTable td {
+    /* font-size: 0.85em; */
+    border-bottom: 1px solid #666;
+    padding-left: 0.1em; 
+    padding-right: 0.1em; 
+    xvertical-align: 4px;
+    border-left: 1px solid #ccc;
+} 
+.mySqlGridTable th {
+    padding: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #666;
+  /*  vertical-align: 4px;  */
+    background-color: #337AB7; 
+    color: white;
+}
+
+.mySqlGridTable th a, .mySqlGridTable th a:visited {
+    color: white;
+}
+
+.mySqlGridTable input[type="button"] { font-size: 0.85em; }
+
+.mySqlGridTable tbody tr:hover td, .mySqlGridTable tbody tr:hover  {
+    background-color:#DCF7EC;  
+}
+.mySqlGridTable tbody tr:nth-child(odd) { background-color:#E0EDF9 }
+.mySqlGridTable tbody tr:nth-child(even) { background-color: #EFEFEF; }
+
+
+.pagination {margin-top: 0;}
+
+.pagination{display:inline-block;padding-left:0;border-radius:4px}
+.pagination>li{display:inline}
+.pagination>li>a,.pagination>li>span{position:relative;float:left;padding:6px 12px;margin-left:-1px;line-height:1.42857143;color:#337ab7;text-decoration:none;background-color:#fff;border:1px solid #ddd}
+.pagination>li:first-child>a,.pagination>li:first-child>span{margin-left:0;border-top-left-radius:4px;border-bottom-left-radius:4px}
+.pagination>li:last-child>a,.pagination>li:last-child>span{border-top-right-radius:4px;border-bottom-right-radius:4px}
+.pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover{color:#23527c;background-color:#eee;border-color:#ddd}
+.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{z-index:2;color:#fff;cursor:default;background-color:#337ab7;border-color:#337ab7}
+.pagination>.disabled>a,.pagination>.disabled>a:focus,.pagination>.disabled>a:hover,.pagination>.disabled>span,.pagination>.disabled>span:focus,.pagination>.disabled>span:hover{color:#777;cursor:not-allowed;background-color:#fff;border-color:#ddd}
+.pagination-lg>li>a,.pagination-lg>li>span{padding:10px 16px;font-size:18px}
+.pagination-lg>li:first-child>a,.pagination-lg>li:first-child>span{border-top-left-radius:6px;border-bottom-left-radius:6px}
+.pagination-lg>li:last-child>a,.pagination-lg>li:last-child>span{border-top-right-radius:6px;border-bottom-right-radius:6px}
+.pagination-sm>li>a,.pagination-sm>li>span{padding:5px 10px;font-size:12px}.pagination-sm>li:first-child>a,.pagination-sm>li:first-child>span{border-top-left-radius:3px;border-bottom-left-radius:3px}
+.pagination-sm>li:last-child>a,.pagination-sm>li:last-child>span{border-top-right-radius:3px;border-bottom-right-radius:3px}
+
+
+  
