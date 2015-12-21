@@ -1,5 +1,5 @@
 <?php
-namespace mysqlgrid;
+namespace mysqlgridspace;
 class mysqlgrid
 {
     var $name;

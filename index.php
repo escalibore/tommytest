@@ -1,7 +1,8 @@
 <?php
+
 require __DIR__ . '/vendor/autoload.php';
 
-$mysqlgrid = new mysqlgrid\mysqlgrid([
+$mysqlgrid = new mysqlgridspace\mysqlgrid([
     'sql' => "select * from tommytable",
     'lineCount' => 15,
     //'database' => $_SESSION['session_database'],
