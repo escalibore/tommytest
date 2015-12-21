@@ -1,6 +1,25 @@
 <?php
-//namespace mysqlgridspace;
-class xxxmysqlgrid
+namespace mysqlgridspace;
+
+class Page {
+    public function __construct()
+    {
+        echo "hello, i am a page.<br>";
+    }
+}
+
+class Book {
+    public function __construct()
+    {
+        echo "hello, i am a book.<br>";
+    }
+}
+
+function lego() {
+    echo 'You are now a master builder.';
+}
+
+class Mysqlgridmain
 {
     var $name;
     public $mySqlGridOptions;
