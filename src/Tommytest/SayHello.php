@@ -2,10 +2,10 @@
 
 namespace Tommytest;
 
-class SayHello
+class xSayHello
 {
     public static function world()
     {
-        return 'Hello World, Composer!';
+        return 'Hello2 World, Composer!';
     }
 }
