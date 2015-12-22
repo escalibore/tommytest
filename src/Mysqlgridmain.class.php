@@ -1,34 +1,13 @@
 <?php
 namespace mysqlgridspace;
 
-class Page
-{
-    public function __construct()
-    {
-        echo "hello, i am a page.<br>";
-    }
-}
-
-class Book
-{
-    public function __construct()
-    {
-        echo "hello, i am a book.<br>";
-    }
-}
-
-function lego()
-{
-    echo 'You are now a master builder.';
-}
-
 class Mysqlgridmain
 {
     function __construct($mySqlGridOptions)
     {
         if (isset($mySqlGridOptions['includePath'])) $mySqlGridPath = $mySqlGridOptions['includePath']; else $mySqlGridPath = 'vendor/tommytest/tommytest/src/';
         $lineCount = $mySqlGridOptions['lineCount'] ? $mySqlGridOptions['lineCount'] : 25;
-        require $mySqlGridPath . 'dbconnect.php';
+        //require $mySqlGridPath . 'dbconnect.php';
         echo "<div style='margin-left:30%' id='mySqlGridLoading'>Loading... <img class='mySqlGridSpinner' src='{$mySqlGridPath}images/725.GIF'></div>";
         $mySqlGridOptionsEncode = rawurlencode(base64_encode(serialize($mySqlGridOptions)));
         $mySqlGridData = 'mySqlGridOptions=' . $mySqlGridOptionsEncode;
