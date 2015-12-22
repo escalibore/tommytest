@@ -1,54 +1,36 @@
 <?php
 namespace mysqlgridspace;
 
-class Page {
+class Page
+{
     public function __construct()
     {
         echo "hello, i am a page.<br>";
     }
 }
 
-class Book {
+class Book
+{
     public function __construct()
     {
         echo "hello, i am a book.<br>";
     }
 }
 
-function lego() {
+function lego()
+{
     echo 'You are now a master builder.';
 }
 
 class Mysqlgridmain
 {
-    var $name;
-    public $mySqlGridOptions;
-    public $path;
-
-
-    function set_params($mySqlGridOptions)
-    {
-        $this->mySqlGridOptions = $mySqlGridOptions;
-    }
-
     function __construct($mySqlGridOptions)
     {
-        $this->mySqlGridOptions = $mySqlGridOptions;
-
-        //var_dump($this->mySqlGridOptions);
-        //echo "I'm here too<br>";
-        $this->path = $this->mySqlGridOptions['includePath'];
-        //echo "<br>path:" . $this->path . "<br>";
-        // require $this->path . "mysqlgrid.php";
-        //$myfun = 'good';
-        //echo "$myfun";
-
-
-        if ($this->mySqlGridOptions['includePath']) $mySqlGridPath = $this->mySqlGridOptions['includePath']; else $mySqlGridPath = 'vendor/tommytest/tommytest/src/';
-        $lineCount = $this->mySqlGridOptions['lineCount'] ? $this->mySqlGridOptions['lineCount'] : 25;
+        if (isset($mySqlGridOptions['includePath'])) $mySqlGridPath = $mySqlGridOptions['includePath']; else $mySqlGridPath = 'vendor/tommytest/tommytest/src/';
+        $lineCount = $mySqlGridOptions['lineCount'] ? $mySqlGridOptions['lineCount'] : 25;
         require $mySqlGridPath . 'dbconnect.php';
         echo "<div style='margin-left:30%' id='mySqlGridLoading'>Loading... <img class='mySqlGridSpinner' src='{$mySqlGridPath}images/725.GIF'></div>";
-        $mySqlGridOptionsEncode = rawurlencode(base64_encode(serialize($this->mySqlGridOptions)));
+        $mySqlGridOptionsEncode = rawurlencode(base64_encode(serialize($mySqlGridOptions)));
         $mySqlGridData = 'mySqlGridOptions=' . $mySqlGridOptionsEncode;
         $postString = "'mySqlGridData':'$mySqlGridData'";
         ?>
@@ -92,7 +74,7 @@ class Mysqlgridmain
                     $("#mySqlGridTable").load('<?php echo $mySqlGridPath; ?>mysqlgridajax.php', {'page': num, <?php echo $postString; ?>});
                 });
             });
-            function printableView() {
+            function printableView() { //clears out controls so page looks more like a report.  Suitable for printing etc.
                 var elem = document.getElementById("mySqlGridTop");
                 // elem.parentNode.removeChild(elem);
                 var elem = document.getElementById("mySqlGridSearchRow");
@@ -127,7 +109,7 @@ class Mysqlgridmain
                 }
                 $("#mySqlGridPagination").hide();
             }
-            function ExpandSelect(select, maxOptionsVisible) {
+            function ExpandSelect(select, maxOptionsVisible) { // implements drop-down selects
                 //
                 // ExpandSelect 1.00
                 // Copyright (c) Czarek Tomczak. All rights reserved.
