@@ -1,13 +1,13 @@
 {
   "name": "tommytest/tommytest",
   "type": "library",
-  "description": "Framework agnostic data grid",
+  "description": "test only",
   "keywords": ["datagrid","data grid"],
   "homepage": "https://github.com/escalibore/tommytest",
   "license": "MIT",
   "authors": [
     {
-      "name": "Tommy Bert",
+      "name": "Tom Berthold",
       "email": "tom@tberthold.com",
       "homepage": "http://tberthold.com",
       "role": "Developer"
@@ -17,7 +17,6 @@
     "php": ">=5.3.0"
   },
   "autoload": {
-    "files": ["src/Mysqlgridmain.class.php"],
     "psr-4": {
       "mysqlgridspace\\":"src/"
     }
